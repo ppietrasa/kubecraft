@@ -1,0 +1,4 @@
+To diagnose a problem I used `clab inspect -a` and noted the state of a
+clab-first-lab-srl2 node as "exited".  Also, `docker ps -a` optionally with
+`--filter name=clab-firstlab`, shows all the containers also the non-running
+ones. There I can also see "Excited" and also how long ago.
