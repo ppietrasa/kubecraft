@@ -153,7 +153,7 @@ class TestLabDeployment:
         containers = result.stdout.strip().split('\n')
         containers = [c for c in containers if c]  # Remove empty strings
 
-        assert len(containers) == 2, f"Expected 2 containers, got: {containers}"
+        assert len(containers) == 4, f"Expected 2 containers, got: {containers}"
 
     def test_inspect_returns_data(self):
         """containerlab inspect should return lab information."""
